@@ -50,7 +50,7 @@ class Beers extends Component {
                         >
                             <div
                                 style={{
-                                    height: '250px',
+                                    height: '300px',
                                     width: '200px',
                                     display: 'flex',
                                     justifyContent: 'center',
@@ -77,10 +77,9 @@ class Beers extends Component {
                                     {beer.description}
                                 </h3>
                                 <h3>Tips: {beer.brewers_tips}</h3>
+                                
+                                <h3>Pair With: </h3>
                                 <ul>
-                                    <span style={{ fontWeight: 'bold' }}>
-                                        Pair With:
-                                    </span>
                                     {beer.food_pairing.map((item, idx) => {
                                         return (
                                         <li key={idx}>
