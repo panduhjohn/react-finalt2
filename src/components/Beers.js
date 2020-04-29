@@ -43,21 +43,30 @@ class Beers extends Component {
                             style={{
                                 display: 'flex',
                                 justifyContent: 'space-around',
+                                alignContent: 'center',
                                 marginTop: '30px',
+                                // backgroundColor: 'green'
                             }}
                         >
-                            <div style={{ height: '300px', width: '200px' }}>
+                            <div
+                                style={{
+                                    height: '250px',
+                                    width: '200px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    // backgroundColor: 'red',
+                                    alignContent: 'center',
+                                }}
+                            >
                                 <img
                                     src={beer.image_url}
-                                    style={{ height: '230px', width: '120px' }}
+                                    style={{ height: '240px', width: '120px' }}
                                     alt=''
                                 />
                             </div>
-                            <div style={{ width: '800px' }}>
-                                <h1
-                                    id='name'
-                                    style={{ fontFamily: 'permanent marker' }}
-                                >
+                            <div style={{ width: '900px' }}>
+                                <h1 style={{ fontFamily: 'permanent marker' }}>
                                     {beer.name}
                                 </h1>
 
@@ -73,11 +82,17 @@ class Beers extends Component {
                                         Pair With:
                                     </span>
                                     {beer.food_pairing.map((item, idx) => {
-                                        return <li key={idx}>{item}</li>;
+                                        return (
+                                        <li key={idx}>
+                                            {item}
+                                            </li>
+                                        )
                                     })}
                                 </ul>
+                                <div>
 
                                 <hr />
+                                </div>
                             </div>
                         </div>
                     );
