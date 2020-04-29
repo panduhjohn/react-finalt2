@@ -65,7 +65,7 @@ class Beers extends Component {
                                     alt=''
                                 />
                             </div>
-                            <div style={{ width: '900px' }}>
+                            <div style={{ width: '1300px' }}>
                                 <h1 style={{ fontFamily: 'permanent marker' }}>
                                     {beer.name}
                                 </h1>
@@ -94,6 +94,7 @@ class Beers extends Component {
                                 <hr />
                                 </div>
                             </div>
+                           
                         </div>
                     );
                 })}
